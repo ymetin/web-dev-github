@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lora:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Oswald&display=swap');
+
+:root {
+    --lora: 'Lora', serif;
+    --mont: 'Montserrat', sans-serif;
+    --primary: #d2985e;
+    --secondary: #292929;
+    --snow: #f9f9f9;
+    --trans: all 0.3s ease-in-out;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mont);
+}
+
+/* commont stylings */
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.text {
+    font-size: 15px;
+    line-height: 2;
+    font-family: var(--lora);
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 2px solid var(--primary);
+    font-weight: 500;
+    transition: var(--trans);
+}
+
+.btn-lg {
+    width: 200px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btn-sm {
+    width: 170px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* header */
+.header-top {
+    height: 30px;
+    background-color: var(--secondary);
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+}
+
+.header-top .container {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-top-left span {
+    display: inline-block;
+}
+
+.header-top-left span:first-child {
+    margin-right: 50px;
+}
+
+.header-top-btns li a {
+    color: #fff;
+    margin-left: 28px;
+    transition: var(--trans);
+}
+
+.header-top-btns li a:hover {
+    color: var(--primary);
+}
+
+.header-top-btn {
+    margin-left: 35px !important;
+}
+
+/* header - top navbar */
+.top-navbar {
+    height: 110px;
+}
+
+.top-navbar .container {
+    max-width: 1005px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    display: none;
+    /* hiding toggler btn for larger screen size */
+}
+
+.navbar-nav-right,
+.navbar-nav-left {
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* header - logo stylings */
+.navbar-brand {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 3px solid var(--secondary);
+    margin: 0 60px;
+    padding: 12px;
+    letter-spacing: 3px;
+    transition: var(--trans);
+}
+
+.navbar-brand .brand-text {
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.nav-link {
+    transition: var(--trans);
+}
+
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.header-banner {
+    background-color: var(--snow);
+}
+
+.header-banner .container {
+    justify-content: space-between;
+    max-width: 1005px;
+}
+
+.header-banner-left {
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.header-banner-left h1 {
+    color: var(--primary);
+    max-width: 430px;
+    margin-left: 0;
+    line-height: 1.3;
+    font-size: 40px;
+    font-family: var(--mont);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.header-banner-right {
+    width: 345px;
+}
